@@ -64,23 +64,22 @@ header {
 
 .cover h1 {
   /* стили заголовка */
-  position: relative;
-
   font-weight: bold; /* 700; */
   font-size: 100px;
-
+  
   line-height: 115%;
   
   letter-spacing: 130%;
   
   text-transform: uppercase;
   color: #FFFFFF;
-
-  width: 1000/1100;
+  
+  width: 1000;
   
   padding: 165px 50px 0px; /* 207px; 
   
   /*
+  position: relative;
   flex-direction: column;
   justify-content: space-around;
   height: 385;
@@ -113,15 +112,69 @@ header {
 }
 .lots ul {
   /* стили списка карточек */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .lots li {
   /* стили для элементов списка */
 }
 .lots a {
   /* стили ссылок карточек */
+  text-decoration: none;  
 }
 .lots article {
   /* стили карточек */
+  display: flex;
+  height: 596px;
+  width: 334px;
+  
+  color: #fff;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  /*
+  */
+}
+.lots article h3 {
+  font-weight: bold; /* 700; */
+  font-size: 22px;
+  
+  line-height: 120%;
+  
+  letter-spacing: 0%;
+  
+  text-transform: uppercase;
+  text-decoration: underline solid 0;
+  color: #FFFFFF;
+  
+  padding: 48px 40px 0px;
+}
+.lots article p {
+  font-weight: 400;
+  font-size: 20px;
+  
+  line-height: 120%;
+  
+  letter-spacing: 0%;
+  
+  text-transform: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  
+  padding: 0px 40px 48px;
+}
+
+.card-film-bg {
+  /* стили карточки фильма*/
+  background-image: url('../images/card-lot-01.jpg');
+}
+.card-book-bg {
+  /* стили карточки книги*/
+  background-image: url('../images/card-lot-02.jpg');
+}
+.card-picture-bg {
+  /* стили карточки картины*/
+  background-image: url('../images/card-lot-03.jpg');
 }
 
 .about-auction {
