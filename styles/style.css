@@ -1,1 +1,158 @@
-/* место для вашего кода */
+header {
+  /* стили для шапки*/
+  width: 1100px;
+  height: 293px;
+  /*
+  margin: 0px;
+  */
+}
+
+.text-align-right {
+  /* стили для выравнивания текста по правой стороне*/
+  text-align: right;
+}
+
+.text-align-center {
+  /* стили для выравнивания текста по центру */
+  text-align: center;
+}
+
+.text-align-left {
+  /* стили для выравнивания текста по левой стороне*/
+  text-align: left;
+}
+
+.overlayed::before {
+  /* стили для темного 60% наложения */
+  content: "";
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: -1;
+  /*
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+  */
+}
+
+.black-cover-no-repeat-center {
+  /* стили для фоновых картинок */
+  position: relative;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.cover {
+  /* стили для обертки cover */
+  height: 757px;
+  
+  background-image: url('../images/cover.jpg');
+  /*
+  background-color: black;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/cover.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  width: 1100px;
+  margin: 0px;
+  padding: 293px 0px 0px;
+  */
+}
+
+.cover h1 {
+  /* стили заголовка */
+  position: relative;
+
+  font-weight: bold; /* 700; */
+  font-size: 100px;
+
+  line-height: 115%;
+  
+  letter-spacing: 130%;
+  
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  width: 1000/1100;
+  
+  padding: 165px 50px 0px; /* 207px; 
+  
+  /*
+  flex-direction: column;
+  justify-content: space-around;
+  height: 385;
+  font-family: Raleway, sans-serif;
+  */
+}
+
+.cover h1 span {
+  /* стили для частей заголовка "оно тебе надо" */
+  display: block;
+}
+
+
+.description {
+  /* стили для блока описания */
+}
+.description p {
+  /* стили для параграфа в описании */
+}
+.description button {
+  /* стили для кнопки */
+  text-transform: uppercase;
+}
+
+.lots {
+  /* стили секции лотов */
+}
+.lots h2 {
+  /* стили заголовка лотов */
+}
+.lots ul {
+  /* стили списка карточек */
+}
+.lots li {
+  /* стили для элементов списка */
+}
+.lots a {
+  /* стили ссылок карточек */
+}
+.lots article {
+  /* стили карточек */
+}
+
+.about-auction {
+  display: flex; /* для колонок */
+}
+.column-logo {
+  /* стили для первой колонки */
+}
+.column-text {
+  /* стили для второй колонки */
+}
+.column-text h2 {
+  /* стили заголовка во второй колонке */
+}
+.column-text div {
+  /* стили текста во второй колонке */
+}
+
+footer {
+  /* стили футера */
+}
+footer address {
+  /* стили адреса */
+}
+footer nav ul {
+  /* стили меню */
+}
+footer nav ul li a {
+  /* стили ссылок в меню */
+}
+footer .social-links a {
+  /* стили социальных ссылок */
+}
+
