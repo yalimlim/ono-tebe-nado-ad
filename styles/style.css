@@ -1,37 +1,48 @@
-header {
-  /* стили для шапки*/
-  width: 1100px;
-  height: 293px;
-  /*
-  margin: 0px;
-  */
-}
-
 .text-align-right {
   /* стили для выравнивания текста по правой стороне*/
   text-align: right;
 }
-
 .text-align-center {
   /* стили для выравнивания текста по центру */
   text-align: center;
 }
-
 .text-align-left {
   /* стили для выравнивания текста по левой стороне*/
   text-align: left;
 }
+.text-upper {
+  text-transform: uppercase;
+}
+.text-white {
+  color: #FFFFFF;
+}
 
-.overlayed::before {
+.block {
+  display: block;
+}
+
+header {
+  /* стили для шапки*/
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  
+  width: 1100px;
+  height: 293px;
+  
+  padding: 0px 50px;
+}
+.logo {
+}
+             
+
+.overlay::before {
   /* стили для темного 60% наложения */
   content: "";
   inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   z-index: -1;
-  /*
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
-  */
 }
 
 .black-cover-no-repeat-center {
@@ -50,15 +61,9 @@ header {
   
   background-image: url('../images/cover.jpg');
   /*
-  background-color: black;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/cover.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  
   width: 1100px;
   margin: 0px;
-  padding: 293px 0px 0px;
+  padding: 0px;
   */
 }
 
@@ -67,17 +72,10 @@ header {
   font-weight: bold; /* 700; */
   font-size: 100px;
   
-  line-height: 115%;
-  
-  letter-spacing: 130%;
-  
-  text-transform: uppercase;
-  color: #FFFFFF;
-  
-  width: 1000;
-  
-  padding: 165px 50px 0px; /* 207px; 
-  
+  line-height: 115px;
+  letter-spacing: 0.3em;
+
+  padding: 165px 50px 0px; /* 207px; */
   /*
   position: relative;
   flex-direction: column;
@@ -86,22 +84,38 @@ header {
   font-family: Raleway, sans-serif;
   */
 }
-
 .cover h1 span {
-  /* стили для частей заголовка "оно тебе надо" */
-  display: block;
+  padding: 0 0 20px;
 }
-
-
+.cover h1 span::after {
+  content: "";
+  margin-left: -0.3em; /* убираем нежелательный отступ */
+}
 .description {
   /* стили для блока описания */
+  font-weight: 400;
+  font-size: 22px;
+  
+  line-height: 28px;
+  letter-spacing: -0.25px;
+  word-spacing: 20px;
+  
+  margin: 86px 50px 50px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .description p {
   /* стили для параграфа в описании */
 }
 .description button {
   /* стили для кнопки */
-  text-transform: uppercase;
+  width: 256px;
+  height: 51px;
+
+  border: 1px solid white;
+  background-color: transparent;
 }
 
 .lots {
