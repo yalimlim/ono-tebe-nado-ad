@@ -29,7 +29,13 @@ blockquote {
 
 a {
   color: inherit;
+  border-bottom: 1px solid black; /* имитация подчеркивания */
+  text-decoration: none;        /* убрать стандартное подчеркивание */
 }
+a:has(img) {
+  border-width: 0px;
+}
+
 
 img {
   width: 100%;
