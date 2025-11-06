@@ -47,15 +47,11 @@ header {
   
   font-size: 18px;
   font-weight: 400;
-
   padding: 0px 50px 4px;
   position: relative;
 }
-
 header nav {
   width: 395px;
-  /*
-  */
 }
 header nav ul {
   width: 100%;
@@ -65,25 +61,19 @@ header nav ul {
   grid-template-columns: auto auto auto;
   column-gap: 22px;
 }
-/*
-display: flex;
-  justify-content: space-between;
-  } 
-  display: inline;
-  */
-header nav li { 
-  padding-left: 3px;  
-  margin-right: 4px;  
+header nav li {
+  padding-left: 3px;
+  margin-right: 4px;
 }
-header nav li:first-child { 
+header nav li:first-child {
   list-style-type: none;
-  padding-left: 0px;  
-  margin-left: 0px;  
-  margin-right: 0px;  
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
-header nav li:last-child { 
-  padding-right: 0px;  
-  margin-right: 0px;  
+header nav li:last-child {
+  padding-right: 0px;
+  margin-right: 0px;
 }
 
 header .logo-link {
@@ -92,14 +82,10 @@ header .logo-link {
 }
 header .logo {
   width: 136.5px;
-  
   position: absolute;
   top: 49.5%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /*
-  height: 105px;
-  */
 }
 header address {
   justify-self: end;
@@ -136,36 +122,23 @@ header address {
   height: 757px;
   
   background-image: url('../images/cover.jpg');
-  /*
-  width: 1100px;
-  margin: 0px;
-  padding: 0px;
-  */
 }
 
 .cover h1 {
   /* стили заголовка */
-  font-weight: bold; /* 700; */
+  font-weight: bold;
   font-size: 100px;
   
   line-height: 115px;
   letter-spacing: 0.3em;
-
-  padding: 165px 50px 0px; /* 207px; */
-  /*
-  position: relative;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 385;
-  font-family: Raleway, sans-serif;
-  */
+  padding: 165px 50px 0px;
 }
 .cover h1 span {
   padding: 0 0 20px;
 }
 .cover h1 span::after {
   content: "";
-  margin-left: -0.3em; /* убираем нежелательный отступ */
+  margin-left: -0.3em;/* убираем нежелательный отступ */
 }
 .description {
   /* стили для блока описания */
@@ -186,7 +159,6 @@ header address {
   /* стили для кнопки */
   width: 256px;
   height: 51px;
-
   border: 1px solid white;
   background-color: transparent;
 }
@@ -223,11 +195,9 @@ header address {
   color: #fff;
   flex-flow: column nowrap;
   justify-content: space-between;
-  /*
-  */
 }
 .lots article h3 {
-  font-weight: bold; /* 700; */
+  font-weight: bold;
   font-size: 22px;
   
   line-height: 120%;
@@ -281,7 +251,7 @@ header address {
 .about {
   /* стили для колонок */
   margin: 120px 24px 0;
-  display: grid; 
+  display: grid;
   grid-template-columns: max-content 1fr;
   grid-template-rows: auto auto;
 }
@@ -304,9 +274,9 @@ header address {
   width: 148px;
 }
 .column-text {
-  display: grid; 
-  grid-template-rows: 240px auto;
   /* стили для второй колонки */
+  display: grid;
+  grid-template-rows: 240px auto;
   width: 693px;
   padding: 40px 0px 0px 25px;
 }
@@ -319,7 +289,6 @@ header address {
   /* стили текста во второй колонке */
   grid-row-start: 2;
   padding-top: 3px;
-
   line-height: 2.9ex;
 }
 .padding-5 {
@@ -332,7 +301,7 @@ footer {
   font-weight: 400;
   
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   
   margin-top: 180px;
@@ -345,7 +314,7 @@ footer address {
 footer ul {
   list-style: none;
 }
-footer nav ul{
+footer nav ul {
   /* стили меню */
   display: flex;
   flex-direction: column;
