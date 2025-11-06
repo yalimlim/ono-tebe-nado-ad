@@ -29,7 +29,7 @@ blockquote {
 
 a {
   color: inherit;
-  border-bottom: 1px solid black; /* имитация подчеркивания */
+  border-bottom: 1.3px solid black; /* имитация подчеркивания */
   text-decoration: none;        /* убрать стандартное подчеркивание */
 }
 a:has(img) {

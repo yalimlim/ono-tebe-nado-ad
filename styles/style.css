@@ -27,6 +27,11 @@
 address {
   max-width: 240px;
   font-style: normal;
+  line-height: 2.58ex;
+}
+address p {
+  margin-top: 0.5px;
+  margin-left: 1px;
 }
 
 
@@ -43,23 +48,42 @@ header {
   font-size: 18px;
   font-weight: 400;
 
-  line-height: 2.6ex;
-
-  padding: 0px 50px 8px;
+  padding: 0px 50px 4px;
   position: relative;
 }
 
 header nav {
-  max-width: 389px;
-  min-width: 389px;
+  width: 395px;
+  /*
+  */
 }
 header nav ul {
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  list-style-type: circle;
+  list-style-position: outside;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 22px;
 }
-header li {
+/*
+display: flex;
+  justify-content: space-between;
+  } 
   display: inline;
-  height: 21px;
+  */
+header nav li { 
+  padding-left: 3px;  
+  margin-right: 4px;  
+}
+header nav li:first-child { 
+  list-style-type: none;
+  padding-left: 0px;  
+  margin-left: 0px;  
+  margin-right: 0px;  
+}
+header nav li:last-child { 
+  padding-right: 0px;  
+  margin-right: 0px;  
 }
 
 header .logo-link {
@@ -77,10 +101,9 @@ header .logo {
   height: 105px;
   */
 }
-
 header address {
   justify-self: end;
-  padding-top: 4px;
+  padding-top: 0.5px;
 }
              
 
@@ -158,9 +181,6 @@ header address {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.description p {
-  /* стили для параграфа в описании */
 }
 .description button {
   /* стили для кнопки */
@@ -308,17 +328,38 @@ header address {
 
 footer {
   /* стили футера */
+  font-size: 18px;
+  font-weight: 400;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  justify-content: center;
+  
+  margin-top: 180px;
+  padding: 0 50px;
 }
 footer address {
   /* стили адреса */
+  padding-top: 0.5px;
 }
-footer nav ul {
+footer ul {
+  list-style: none;
+}
+footer nav ul{
   /* стили меню */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-footer nav ul li a {
-  /* стили ссылок в меню */
-}
-footer .social-links a {
+footer .social-links {
   /* стили социальных ссылок */
+  justify-self: flex-end;
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .social-links img {
+  width: 48px;
+  height: 48px;
 }
 
